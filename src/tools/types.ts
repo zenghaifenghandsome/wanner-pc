@@ -1,0 +1,3 @@
+interface zmenuProps{
+    theme?:string
+}

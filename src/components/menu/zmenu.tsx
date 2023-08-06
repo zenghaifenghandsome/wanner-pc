@@ -1,5 +1,5 @@
 import {Menu} from '@arco-design/web-react'
-import {IconAlipayCircle, IconApps, IconBook, IconBranch, IconCode, IconHome, IconMusic, IconSelectAll} from '@arco-design/web-react/icon'
+import {IconAlipayCircle, IconApps, IconBook, IconBranch, IconCode, IconHome, IconMusic, IconSelectAll, IconUser} from '@arco-design/web-react/icon'
 import { useEffect, useState } from 'react'
 import { matchRoutes, useLocation, useNavigate } from 'react-router-dom';
 import router from '../../router/router';
@@ -62,6 +62,9 @@ const ZMenu:React.FC<zmenuProps> = (props:zmenuProps) =>{
                     </Menu.Item>
                     <Menu.Item className="menuButton" key='/evd'>
                         <IconBranch />每天
+                    </Menu.Item>
+                    <Menu.Item className="menuButton menuButton-user" key='/user'>
+                        <IconUser />用户
                     </Menu.Item>
                     
                 </Menu>
